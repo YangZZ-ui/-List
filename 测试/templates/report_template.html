@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{project_name}} - 审计分析备忘录</title>
+<style>
+:root {
+    --ey-blue: #003087;
+    --ey-light-blue: #005eb8;
+    --ey-accent: #0072ce;
+    --ey-bg: #f5f7fa;
+    --ey-text: #1a1a1a;
+    --ey-muted: #666666;
+    --risk-high: #d32f2f;
+    --risk-medium: #f9a825;
+    --risk-low: #1976d2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+    line-height: 1.7;
+    color: var(--ey-text);
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 32px;
+}
+
+/* 封面 */
+.cover {
+    text-align: center;
+    padding: 80px 0 60px;
+    border-bottom: 4px solid var(--ey-blue);
+    margin-bottom: 40px;
+}
+.cover h1 {
+    color: var(--ey-blue);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: 1px;
+}
+.cover .subtitle {
+    color: var(--ey-light-blue);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.cover .meta {
+    display: inline-block;
+    text-align: left;
+    background: var(--ey-bg);
+    padding: 24px 32px;
+    border-radius: 8px;
+    min-width: 360px;
+}
+.cover .meta-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 14px;
+}
+.cover .meta-label { color: var(--ey-muted); width: 100px; }
+.cover .meta-value { font-weight: 600; }
+
+/* 提示框 */
+.alert {
+    background: #e8f0fe;
+    border-left: 5px solid var(--ey-blue);
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 0 6px 6px 0;
+}
+.alert-title {
+    font-weight: 700;
+    color: var(--ey-blue);
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.alert-body {
+    color: var(--ey-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* 标题 */
+h1 { color: var(--ey-blue); font-size: 26px; border-bottom: 2px solid var(--ey-blue); padding-bottom: 10px; margin-top: 40px; }
+h2 { color: var(--ey-light-blue); font-size: 20px; margin-top: 32px; }
+h3 { color: var(--ey-accent); font-size: 17px; margin-top: 24px; }
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+}
+th, td { border: 1px solid #dde3ea; padding: 10px 14px; text-align: left; }
+th { background: var(--ey-blue); color: #fff; font-weight: 600; }
+tr:nth-child(even) { background: #f8fafc; }
+
+/* 列表 */
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+
+/* 风险标签 */
+.risk-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+.risk-high { background: var(--risk-high); }
+.risk-medium { background: var(--risk-medium); color: #1a1a1a; }
+.risk-low { background: var(--risk-low); }
+
+/* 页脚 */
+.footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #dde3ea;
+    font-size: 12px;
+    color: var(--ey-muted);
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* 打印优化 */
+@media print {
+    .container { max-width: 100%; padding: 20px; }
+    .cover { padding: 40px 0; }
+    body { font-size: 12pt; }
+    h1 { font-size: 20pt; }
+    h2 { font-size: 16pt; }
+    .alert { break-inside: avoid; }
+    table { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- 内容由 memo_generator.py 动态填充 -->
+</div>
+</body>
+</html>
